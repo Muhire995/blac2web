@@ -1,0 +1,60 @@
+<div class="container">
+
+  <form class="form-horizontal"  id="contact_form">
+    <fieldset>
+      <!-- Form Name -->
+      <legend>Events <a routerLink="createEvent"><p><span class="glyphicon glyphicon-plus"></span>new event</p> </a></legend>
+      <div class="container">
+        
+        <table class="table table-bordered table-striped" *ngIf="events">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Host</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="myTable" *ngFor="let event of events">
+          
+            <tr>
+              <td><a routerLink="event/{{event['id']}}">{{event["title"]}}</a></td>
+              <td>{{event["host"]}}</td>
+              <td>{{event["event_date"]}}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+
+    </fieldset>
+
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Registered Business</legend>
+        
+        <div class="container">
+          
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Business name</th>
+                <th>owner</th>
+                <th>Website</th>
+              </tr>
+            </thead>
+            <tbody id="myTable" *ngFor="let bus of businesses">
+              <tr>
+                <td>{{bus["business_name"]}}</td>
+                <td>{{bus["owner_name"]}}</td>
+                <td>{{bus["website"]}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </fieldset>
+  </form>
+</div>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,54 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row content">
+
+            <div class="col-sm-6 text-left">
+              <h1>Contacts</h1>
+              <a href = "mailto: muhireclaude070@gmail.com">muhireclaude070@gmail.com</a><br>
+              <!-- Add font awesome icons
+              <a href="https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com%2FBEKHCanada&data=05%7C01%7CBenjaminCyiza%40cmail.carleton.ca%7Ca30d83a06a2945251f8608db27252cc4%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C638146812831570431%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=bQuSXBi9xarOAKVgTuL81bbgac71Q5I1sx4WWZVBg7I%3D&reserved=0" class="fa fa-facebook"></a>
+              <a href="https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2FBEKHCanada&data=05%7C01%7CBenjaminCyiza%40cmail.carleton.ca%7Ca30d83a06a2945251f8608db27252cc4%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C638146812831570431%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=zTILvM31TMuKZ%2FsrEUHKd2E4OfVcOCOGE5GuO7Hd8TI%3D&reserved=0" class="fa fa-twitter"></a>
+              <a href="https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompanyl%2Fbekhcanada&data=05%7C01%7CBenjaminCyiza%40cmail.carleton.ca%7Ca30d83a06a2945251f8608db27252cc4%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C638146812831570431%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=0XHWuONQDAasPR4x77kX3V8YKqkWlG1Rks2T%2FzdupUQ%3D&reserved=0" class="fa fa-linkedin"></a>
+              <a href="https://can01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2FBEKHCanada&data=05%7C01%7CBenjaminCyiza%40cmail.carleton.ca%7Ca30d83a06a2945251f8608db27252cc4%7C6ad91895de06485ebc51fce126cc8530%7C0%7C0%7C638146812831570431%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=N53nv45khbvwJShmMLlfy28ESWcdg9BDjyObQmSwLyQ%3D&reserved=0" class="fa fa-instagram"></a>-->
+
+            </div>
+            <div class="col-sm-6 text-left">
+                <h1>Login</h1>
+                <form>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input id="email" type="text" class="form-control" name="email" placeholder="Email" [(ngModel)]="email">
+                    </div><br>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input id="password" type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password">
+                    </div><br>
+                    <button type="button" class="btn btn-primary" (click)="signin()">Login</button>
+                    <a routerLink="signup"><button type="button" class="btn">Create account</button></a>
+
+                    <br>
+                  </form>
+
+            </div>
+
+          </div>
+    </div>
+
+  </body>
+
+
+  <section>
+    <router-outlet></router-outlet>
+  </section>

@@ -1,0 +1,41 @@
+<style>
+    /* Set black background color, white text and some padding */
+ footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    background-image: url("../assets/2.jpg");
+  }
+</style>
+<div class="container-fluid text-center">
+  <H1>Up comming events</H1>
+  <div class="row content" >
+
+    <div class="col-sm-2 text-left" *ngFor="let event of events">
+
+      <h1><a routerLink="event/{{event['id']}}">{{event["title"]}}</a></h1>
+      <img src="../assets/event.jpg" alt="Snow" style="width:100%;">
+      <!-- <a routerLink="event/del/{{event['id']}}">Delete</a> -->
+      
+    </div>
+
+
+  </div>
+</div>
+  <div class="container-fluid text-center">
+    <div class="row content">
+
+      <div class="col-sm-6 text-left">
+        <h1>Vision</h1>
+        <p>African entrepreneur envisions africa where access to economic opportunities and ownership of wealth is representative of the nation’s demographics; africa in which African communities have agency to lead coordinated research efforts and generate knowledge to inform equity and inclusion in entrepreneurship ecosystems.</p>
+
+      </div>
+      <div class="col-sm-6 text-left">
+          <h1>Mission</h1>
+          <p>African is the continental central hub for research, data and insights on young entrepreneurship ecosystems in Africa. Our mission is to facilitate and orchestrate structured community-led research collaborations anchored in regional hubs comprised of community and academic researchers, community organizations, post-secondary universities, and colleges</p>
+
+      </div>
+
+    </div>
+  </div>
+

@@ -1,0 +1,40 @@
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>{{event["title"]}}</legend>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+            <label class="col-md-4 control-label">Title: {{event["title"]}}</label>  
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Host: {{event["host"]}}</label>  
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">address: {{event["address"]}}</label>  
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label">Date and Time: {{event["event_date"]}} {{event["event_time"]}}</label>  
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Description: {{event["description"]}}</label>  
+            </div>
+
+
+            <!-- Button -->
+            <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+           
+            </div>
+
+        </fieldset>
+    </form>
+</div>
